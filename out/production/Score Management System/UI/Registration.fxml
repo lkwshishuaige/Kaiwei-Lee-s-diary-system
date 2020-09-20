@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="872.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="245.0" style="-fx-background-color: #232323;">
+         <children>
+            <Pane layoutY="85.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="5.0" prefHeight="51.0" prefWidth="199.0" text="注册" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="239.0" layoutY="-172.0" prefHeight="202.0" prefWidth="344.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+      <Pane layoutX="245.0" layoutY="31.0" prefHeight="389.0" prefWidth="621.0">
+         <children>
+            <TextField fx:id="registrationId" layoutX="249.0" layoutY="108.0" prefHeight="37.0" prefWidth="199.0" promptText="输入你的账号">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="registrationName" layoutX="249.0" layoutY="167.0" prefHeight="37.0" prefWidth="199.0" promptText="输入你的姓名">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="registrationPassword" layoutX="249.0" layoutY="219.0" prefHeight="37.0" prefWidth="199.0" promptText="请输入密码">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="S_J_num" alignment="CENTER_RIGHT" layoutX="173.0" layoutY="108.0" prefHeight="37.0" prefWidth="76.0" text="账号：" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="173.0" layoutY="219.0" prefHeight="37.0" prefWidth="76.0" text="密码：" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="S_J_num1" alignment="CENTER_RIGHT" layoutX="173.0" layoutY="167.0" prefHeight="37.0" prefWidth="76.0" text="姓名：" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonRegistration" layoutX="310.0" layoutY="295.0" mnemonicParsing="false" onAction="#ClickRegistration" prefHeight="37.0" prefWidth="76.0" style="-fx-background-radius: 30;" text="确定">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="registrationError" alignment="CENTER_RIGHT" layoutX="264.0" layoutY="272.0" prefHeight="19.0" prefWidth="180.0" textFill="WHITE" />
+            <Label fx:id="registrationTrue" alignment="CENTER" layoutX="115.0" layoutY="46.0" prefHeight="37.0" prefWidth="391.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1088.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <children>
+      <AnchorPane prefHeight="651.0" prefWidth="216.0" style="-fx-background-color: #232323;">
+         <children>
+            <VBox layoutY="513.0" prefHeight="138.0" prefWidth="245.0">
+               <children>
+                  <Button fx:id="buttonRegistration" mnemonicParsing="false" onAction="#buttonRegistration" prefHeight="68.0" prefWidth="245.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="注册" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1" mnemonicParsing="false" prefHeight="68.0" prefWidth="245.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="李楷威的日记系统" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="85.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="5.0" prefHeight="51.0" prefWidth="199.0" text="登录" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Pane layoutX="239.0" layoutY="-172.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+      <Pane layoutX="319.0" layoutY="131.0" prefHeight="389.0" prefWidth="692.0">
+         <children>
+            <TextField fx:id="id" layoutX="424.0" layoutY="117.0" prefHeight="37.0" prefWidth="199.0" promptText="请输入学号">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="424.0" layoutY="203.0" prefHeight="37.0" prefWidth="199.0" promptText="请输入密码">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Label alignment="CENTER_RIGHT" layoutX="348.0" layoutY="203.0" prefHeight="37.0" prefWidth="76.0" text="密码：" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="S_J_num" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="117.0" prefHeight="37.0" prefWidth="76.0" text="账号：" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="409.0" layoutY="298.0" mnemonicParsing="false" onAction="#ClickLogin" prefHeight="37.0" prefWidth="76.0" style="-fx-background-radius: 30;" text="登录">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="530.0" layoutY="298.0" mnemonicParsing="false" onAction="#ClickExit" prefHeight="37.0" prefWidth="76.0" style="-fx-background-radius: 30;" text="退出">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Pane layoutX="32.0" layoutY="54.0" prefHeight="281.0" prefWidth="305.0" style="-fx-background-image: 1564;">
+               <children>
+                  <ImageView fitHeight="302.0" fitWidth="305.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@login.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="errorId" alignment="CENTER" layoutX="348.0" layoutY="258.0" prefHeight="19.0" prefWidth="313.0" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="userIden" alignment="CENTER" layoutX="273.0" layoutY="93.0" prefHeight="51.0" prefWidth="143.0" text="Diary" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

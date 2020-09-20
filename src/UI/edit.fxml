@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1088.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <children>
+      <AnchorPane prefHeight="651.0" prefWidth="216.0" style="-fx-background-color: #232323;">
+         <children>
+            <Pane layoutY="85.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="5.0" prefHeight="51.0" prefWidth="199.0" text="日记" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutY="362.0" prefHeight="289.0" prefWidth="245.0">
+               <children>
+                  <Button fx:id="buttonSearch" mnemonicParsing="false" onAction="#ClickSearch" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="查看历史" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#ClickSave" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="保存" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button11" mnemonicParsing="false" onAction="#ClickUpdate" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="修改密码" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#ClickOut" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="注销" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBotton" mnemonicParsing="false" onAction="#ClickExit" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="退出" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="146.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="23.0" layoutY="3.0" prefHeight="51.0" prefWidth="199.0" text="欢迎" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox layoutX="23.0" layoutY="314.0" prefHeight="29.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="viewName" prefHeight="37.0" prefWidth="149.0" promptText="输入你要查看的日记" />
+                  <Button fx:id="viewhBotton" mnemonicParsing="false" onAction="#viewButton" prefHeight="47.0" prefWidth="61.0" text="查看" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="239.0" layoutY="-172.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+      <TextField fx:id="diaryDate" layoutX="324.0" layoutY="117.0" />
+      <TextField fx:id="diaryTheme" layoutX="324.0" layoutY="155.0" />
+      <TextField fx:id="diaryWeather" layoutX="324.0" layoutY="188.0" />
+      <Label alignment="CENTER" layoutX="267.0" layoutY="121.0" prefHeight="23.0" prefWidth="53.0" text="日期：" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="267.0" layoutY="155.0" prefHeight="23.0" prefWidth="53.0" text="主题：" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="267.0" layoutY="188.0" prefHeight="23.0" prefWidth="53.0" text="天气：" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="diaryContent" layoutX="285.0" layoutY="273.0" prefHeight="330.0" prefWidth="737.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <Label layoutX="294.0" layoutY="218.0" prefHeight="41.0" prefWidth="143.0" text="内容：" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="savedSuccessfully" layoutX="919.0" layoutY="56.0" prefHeight="41.0" prefWidth="122.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
